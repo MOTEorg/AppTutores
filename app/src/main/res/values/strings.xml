@@ -1,0 +1,81 @@
+<resources>
+    <!--Pantalla Principal-->
+    <string name="app_name">AppTutores</string>
+    <string name="Titulo">Tutorium</string>
+    <string name="login">Iniciar</string>
+    <string name="user">Email</string>
+    <string name="passw">Contraseña</string>
+    <string name="frasebienvenida">Encuentra un tutor cerca de tí.</string>
+    <string name="register">Soy nuevo, registrarme</string>
+    <string name="olvido">Olvidé mi contraseña</string>
+    <!--Pantalla Registro-->
+    <string name="fraseRegistro1">Aprende, conoce, enseña</string>
+    <string name="fraseRegistro">Registrate, es gratuito</string>
+    <string name="nombre">Nombre:</string>
+    <string name="apellido">Apellido:</string>
+    <string name="tipoRegistro">Registrarme como:</string>
+    <string name="email">Direcciòn de Correo Electrónico:</string>
+    <string name="edad">Edad:</string>
+    <string name="estudiante">Estudiante</string>
+    <string name="tutor">Tutor</string>
+    <string name="sexo">Sexo:</string>
+    <string name="masculino">Hombre</string>
+    <string name="femenino">Mujer</string>
+    <string name="registrarme">Registrarme</string>
+    <string name="aceptacion0">Al hacer click en </string>
+    <string name="aceptacion1">aceptas los términos y condiciones del servicio</string>
+    <!--Pantalla registro cont. estudiante-->
+    <string name="Nivel">Nivel Académico:</string>
+    <string name="Carrera">Carrera:</string>
+    <string name="Curso">Curso/Grado/Semestre:</string>
+    <string name="Direcciòn">Dirección de Domicilio:</string>
+    <string name="Teléfono">Teléfono:</string>
+    <string name="Celular">Teléfono:</string>
+    <!--Pantalla registro cont. tutor-->
+    <string name="Profesion">Profesión u Oficio:</string>
+    <string name="Foto">Foto:</string>
+    <string name="Materias">Materias:</string>
+    <!--Pantalla Perfil Tutor-->
+    <string name="editar">Editar</string>
+    <string name="cambiarpass">Cambiar Contraseña</string>
+    <string name="calificacion">Calificaciòn</string>
+
+    <!--Pantalla Perfil Estudiante-->
+    <string name="buscarTutor">Encuentra un Tutor</string>
+
+    <!--Pantalla Perfil Grupo-->
+    <string name="nombreGrupo">Nombre del Grupo:</string>
+    <string name="anadir">Añadir miembro al Grupo:</string>
+    <string name="Miembros">Miembros</string>
+    <!--Pantalla Busquedas-->
+    <string name="Buscar">Buscar:</string>
+    <string name="porMateria">Por Materia:</string>
+    <string name="porDirecciòn">Por Dirección.</string>
+    <string name="porSexo">Por Sexo</string>
+    <string name="filtrar">Filtrar Búsqueda</string>
+    <!--Pantalla Contactos-->
+    <string name="asunto">Asunto:</string>
+    <string name="adjuntar">Adjuntar</string>
+    <string name="Enviar">Contáctar</string>
+    <string name="cc">Con copia a:</string>
+
+    <!--Pantalla Clase-->
+    <string name="profe">Tutor:</string>
+    <string name="alumnoogrupo">Alumno o Grupo:</string>
+    <string name="fecha">Fecha:</string>
+    <string name="hora">Hora:</string>
+    <string name="duracion">Duración:</string>
+    <string name="costo">Costo:</string>
+    <string name="calificar">Calificar</string>
+    <!--Pantalla Ayuda-->
+    <string name="Acerca">Acerca de Tutorioum:</string>
+    <string name="Desarrolladores">Desarrollado por Moterónica</string>
+    <string name="Responsables">Santiago Cordero , ,</string>
+    <string name="Condiciones">Tèrminos y Condiciones de Uso</string>
+
+    <string name="condiciones">Tutorium no revela tus datos a terceros, los datos proporcionados se utilizan para brindarte un
+                                mejor servicio utilizando técnicas de búsqueda inteligente</string>
+    <string name="Versión">Versión</string>
+    <string name="cuenca">Cuenca, Ecuador</string>
+
+</resources>
