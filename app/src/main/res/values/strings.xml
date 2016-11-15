@@ -48,7 +48,8 @@
     <string name="anadir">Añadir miembro al Grupo:</string>
     <string name="Miembros">Miembros</string>
     <!--Pantalla Busquedas-->
-    <string name="Buscar">Buscar:</string>
+    <string name="Buscarpor">Buscar por:</string>
+    <string name="Buscar">Buscar</string>
     <string name="porMateria">Por Materia:</string>
     <string name="porDirecciòn">Por Dirección.</string>
     <string name="porSexo">Por Sexo</string>
