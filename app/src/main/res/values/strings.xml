@@ -2,7 +2,7 @@
     <!--Pantalla Principal-->
     <string name="app_name">AppTutores</string>
     <string name="Titulo">Tutorium</string>
-    <string name="login">Iniciar</string>
+    <string name="login">Ingresar</string>
     <string name="user">Email</string>
     <string name="passw">Contraseña</string>
     <string name="frasebienvenida">Encuentra un tutor cerca de tí.</string>
