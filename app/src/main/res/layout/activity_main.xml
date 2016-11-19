@@ -39,6 +39,7 @@
         android:layout_marginLeft="14dp"
         android:layout_marginStart="14dp"
         android:background="@color/Blanco"
+        android:textColor="@color/Negro"
         android:id="@+id/txtuser"
         android:layout_below="@+id/lbluser"
         android:layout_marginTop="35dp" />
@@ -58,6 +59,7 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
+        android:textColor="@color/Negro"
         android:id="@+id/txtpass"
         android:layout_marginLeft="12dp"
         android:layout_marginStart="12dp"
@@ -74,7 +76,8 @@
         android:id="@+id/button"
         android:layout_below="@+id/txtpass"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp" />
+        android:layout_marginTop="50dp"
+        android:onClick="ingresar" />
 
     <Button
         android:text="@string/register"
