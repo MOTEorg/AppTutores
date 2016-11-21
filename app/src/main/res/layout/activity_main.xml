@@ -86,5 +86,6 @@
         android:layout_below="@+id/button"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="53dp"
-        android:id="@+id/button2" />
+        android:id="@+id/button2"
+        android:onClick="ir_registrar" />
 </RelativeLayout>
