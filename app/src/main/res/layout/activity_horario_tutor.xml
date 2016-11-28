@@ -1,0 +1,1084 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fondo1">
+
+<ScrollView
+android:id="@+id/scrollView"
+android:layout_width="match_parent"
+android:layout_height="450dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="@string/horario_disponible"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="20sp"
+            android:id="@+id/textView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="1dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal" >
+
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text=""
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="20sp"
+            android:id="@+id/txtViewTime" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="LUNES"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="10sp"
+            android:id="@+id/txtLunes" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="MARTES"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="10sp"
+            android:id="@+id/txtMartes" />
+        <TextView
+            android:layout_width="58dp"
+            android:layout_height="30dp"
+            android:text="MIERCOLES"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="10sp"
+            android:id="@+id/txtMiercoles" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="JUEVES"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="10sp"
+            android:id="@+id/txtJueves" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="VIERNES"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="10sp"
+            android:id="@+id/txtViernes" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="SABADO"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="10sp"
+            android:id="@+id/txtSabado" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal" >
+
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="7-8"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="15dp"
+            android:id="@+id/txtHorario1" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora1" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora2" />
+        <TextView
+            android:layout_width="58dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora3" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora4" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora5" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora61" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal" >
+
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="8-9"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="15dp"
+            android:id="@+id/txtHorario2" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora6" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora7" />
+        <TextView
+            android:layout_width="58dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora8" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora9" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora10" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora62" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal" >
+
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="9-10"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="15dp"
+            android:id="@+id/txtHorario3" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora11" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora12" />
+        <TextView
+            android:layout_width="58dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora13" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora14" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora15" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora63" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal" >
+
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="10-11"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="15dp"
+            android:id="@+id/txtHorario4" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora16" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora17" />
+        <TextView
+            android:layout_width="58dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora18" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora19" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora20" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora64" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal" >
+
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="11-12"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="15dp"
+            android:id="@+id/txtHorario5" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora21" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora22" />
+        <TextView
+            android:layout_width="58dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora23" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora24" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora25" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora65" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal" >
+
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="12-13"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="15dp"
+            android:id="@+id/txtHorario6" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora26" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora27" />
+        <TextView
+            android:layout_width="58dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora28" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora29" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora30" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora66" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal" >
+
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="13-14"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="15dp"
+            android:id="@+id/txtHorario7" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora31" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora32" />
+        <TextView
+            android:layout_width="58dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora33" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora34" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora35" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora67" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal" >
+
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="14-15"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="15dp"
+            android:id="@+id/txtHorario8" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora36" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora37" />
+        <TextView
+            android:layout_width="58dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora38" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora39" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora40" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora68" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal" >
+
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="15-16"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="15dp"
+            android:id="@+id/txtHorario9" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora41" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora42" />
+        <TextView
+            android:layout_width="58dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora43" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora44" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora45" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora69" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal" >
+
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="16-17"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="15dp"
+            android:id="@+id/txtHorario10" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora46" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora47" />
+        <TextView
+            android:layout_width="58dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora48" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora49" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora50" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora70" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal" >
+
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="17-18"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="15dp"
+            android:id="@+id/txtHorario11" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora51" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora52" />
+        <TextView
+            android:layout_width="58dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora53" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora54" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora55" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora71" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal" >
+
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="18-19"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="15dp"
+            android:id="@+id/txtHorario12" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora56" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora57" />
+        <TextView
+            android:layout_width="58dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora58" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora59" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="√"
+            android:background="@color/Verde"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora60" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@color/Rojo"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="24sp"
+            android:id="@+id/txtHora72" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="0dp"
+android:orientation="horizontal"
+android:layout_weight="1"
+    >
+<Button
+    android:id="@+id/nuevo"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:text="SIGUIENTE"
+    android:textSize="@dimen/boton_mediano"
+    android:background="@drawable/boton_nuevo"
+    android:textColor="@color/white"
+    android:paddingRight="@dimen/espacio_grande"
+    android:layout_marginRight="@dimen/espacio_mediano"
+    android:textAllCaps="false"
+    android:onClick="PedirClase"
+    />
+
+<Button
+    android:id="@+id/veterano"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:text="REGRESAR"
+    android:textSize="@dimen/boton_mediano"
+    android:background="@drawable/boton_veterano"
+    android:textColor="@color/white"
+    android:textAllCaps="false"
+    android:paddingRight="@dimen/espacio_grande"
+    android:onClick="Regresar"
+    />
+
+
+</LinearLayout>
+    </LinearLayout>

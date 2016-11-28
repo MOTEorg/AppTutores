@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.logging.Handler;
@@ -19,13 +20,25 @@ public class MainActivity extends AppCompatActivity {
     public android.os.Handler h_consultas=new android.os.Handler(){
         @Override
         public void handleMessage(Message msg){
+            if (msg.what==2){
+                Toast.makeText(getApplicationContext(), (String) msg.obj,
+                        Toast.LENGTH_LONG).show();
+            }else {
             setRespuesta((String) msg.obj);
             Log.d("Response",respuesta);
+                Log.d("Length", String.valueOf(respuesta.length()));
             if (respuesta!=null){
-            if (!respuesta.equals("0")){
+            if (respuesta.length()>3){
             Intent i=new Intent(MainActivity.this, Busqueda.class);
-            i.putExtra("Cedula",respuesta);
-            startActivity(i);
+            i.putExtra("Cedula_usuario",respuesta);
+            startActivity(i);}
+                else{
+                Toast.makeText(MainActivity.this, "Usuario no registrado", Toast.LENGTH_SHORT).show();
+                Intent i=new Intent(MainActivity.this, Registro.class);
+                i.putExtra("Mail","");
+                i.putExtra("Password","");
+                startActivity(i);
+            }
         }
         }
         }
@@ -68,8 +81,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
     void ir_registrar(View v){
-        Log.d("Respuesta",respuesta);
+        usuario = (EditText) findViewById(R.id.txtuser);
+        contrasena = (EditText) findViewById(R.id.txtpass);
+        Intent i =new Intent(MainActivity.this, Registro.class);
+        i.putExtra("Mail",usuario.getText().toString());
+        i.putExtra("Password",contrasena.getText().toString());
+        startActivity(i);
     }
+
     public void setRespuesta(String resp){
         respuesta=resp;
     }

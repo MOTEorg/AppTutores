@@ -80,8 +80,8 @@ public class GeneradorConsultas {
                     URL url = new URL(dataUrl);
                     connection = (HttpURLConnection) url.openConnection();
                     connection.setRequestMethod("POST");
-                    connection.setRequestProperty("Content-Type","application/x-www-form-urlencoded");
-                    connection.setRequestProperty("Content-Length","" + Integer.toString(dataUrlParameters.getBytes().length));
+                    connection.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+                    connection.setRequestProperty("Content-Length", "" + Integer.toString(dataUrlParameters.getBytes().length));
                     connection.setRequestProperty("Content-Language", "en-US");
                     connection.setUseCaches(false);
                     connection.setDoInput(true);
@@ -102,15 +102,21 @@ public class GeneradorConsultas {
                         response.append('\r');
                     }
                     rd.close();
-                    Message msg =new Message();
-                    msg.obj=response.toString();
+                    Message msg = new Message();
+                    msg.obj = response.toString();
                     h_consultas.sendMessage(msg);
+                }
 
-                } catch (Exception e) {
-
+                catch (Exception e){
+                    Log.d("Internet", "compruebe la conexion");
+                    Message msg = new Message();
+                    msg.obj = "Error de conexion en la red";
+                    msg.what=2;
+                    h_consultas.sendMessage(msg);
                     e.printStackTrace();
+                    }
 
-                } finally {
+                finally {
 
                     if (connection != null) {
                         connection.disconnect();

@@ -3,7 +3,7 @@ package com.motetronica.apptutores;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Clase extends AppCompatActivity {
+public class Clase_tutoria extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

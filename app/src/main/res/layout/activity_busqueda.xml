@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_busqueda"
     android:layout_width="match_parent"
@@ -8,144 +8,117 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.motetronica.apptutores.Busqueda">
 
-
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="69dp"
-        android:layout_marginStart="69dp"
-        android:layout_marginTop="118dp">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-
-            <TextView
-                android:text="@string/nombre"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/tableLayout"
-                android:layout_alignLeft="@+id/tableLayout"
-                android:layout_alignStart="@+id/tableLayout"
-                android:layout_marginLeft="38dp"
-                android:layout_marginStart="38dp"
-                android:id="@+id/textView7" />
-
-            <TextView
-                android:text="TextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/tableLayout"
-                android:layout_alignLeft="@+id/tableLayout"
-                android:layout_alignStart="@+id/tableLayout"
-                android:layout_marginLeft="38dp"
-                android:layout_marginStart="38dp"
-                android:id="@+id/textView8" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-
-            <TextView
-                android:text="@string/porMateria"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/tableLayout"
-                android:layout_alignLeft="@+id/tableLayout"
-                android:layout_alignStart="@+id/tableLayout"
-                android:layout_marginLeft="38dp"
-                android:layout_marginStart="38dp"
-                android:id="@+id/textView9" />
-
-            <TextView
-                android:text="TextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/tableLayout"
-                android:layout_alignLeft="@+id/tableLayout"
-                android:layout_alignStart="@+id/tableLayout"
-                android:layout_marginLeft="38dp"
-                android:layout_marginStart="38dp"
-                android:id="@+id/textView10" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-
-            <TextView
-                android:text="@string/porDirecciòn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/tableLayout"
-                android:layout_alignLeft="@+id/tableLayout"
-                android:layout_alignStart="@+id/tableLayout"
-                android:layout_marginLeft="38dp"
-                android:layout_marginStart="38dp"
-                android:id="@+id/textView11" />
-
-            <TextView
-                android:text="TextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/tableLayout"
-                android:layout_alignLeft="@+id/tableLayout"
-                android:layout_alignStart="@+id/tableLayout"
-                android:layout_marginLeft="38dp"
-                android:layout_marginStart="38dp"
-                android:id="@+id/textView12" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-
-            <TextView
-                android:text="TextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/tableLayout"
-                android:layout_alignLeft="@+id/tableLayout"
-                android:layout_alignStart="@+id/tableLayout"
-                android:layout_marginLeft="38dp"
-                android:layout_marginStart="38dp"
-                android:id="@+id/textView13" />
-
-            <TextView
-                android:text="TextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/tableLayout"
-                android:layout_alignLeft="@+id/tableLayout"
-                android:layout_alignStart="@+id/tableLayout"
-                android:layout_marginLeft="38dp"
-                android:layout_marginStart="38dp"
-                android:id="@+id/textView14" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </TableLayout>
 
     <TextView
         android:text="@string/Buscarpor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="43dp"
-        android:layout_marginStart="43dp"
-        android:layout_marginTop="20dp"
-        android:id="@+id/textView15" />
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView15"
+        android:textSize="@dimen/texto_grande"/>
 
-</RelativeLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:text="@string/nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:id="@+id/textView7" />
+
+            <EditText
+                android:text=""
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:id="@+id/buscarNombre"
+                android:background="@color/Blanco"
+                android:textColor="@color/Negro"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:text="@string/porMateria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:id="@+id/textView9" />
+
+            <EditText
+                android:text=""
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="5dp"
+
+                android:id="@+id/buscarMateria"
+                android:background="@color/Blanco"
+                android:textColor="@color/Negro"/>
+
+
+       </TableRow>
+
+        <!--    <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" >
+               <TextView
+                   android:text="@string/porHorario"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="24dp"
+                   android:layout_marginStart="24dp"
+                   android:id="@+id/textView11" />
+               <LinearLayout
+                   android:layout_marginLeft="24dp"
+                   android:layout_marginStart="24dp"
+                   android:layout_height="match_parent"
+                   android:orientation="horizontal">
+                   <Spinner
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/seleccionarHora" />
+                   <Spinner
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginStart="5dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/seleccionarDia" />
+               </LinearLayout>
+
+
+
+           </TableRow>-->
+    </TableLayout>
+    <Button
+        android:text="@string/Buscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/buttonbuscar"
+        android:onClick="ResultadoBusqueda"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+    <include layout="@layout/contenedor_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

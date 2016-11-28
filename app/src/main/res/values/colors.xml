@@ -6,6 +6,8 @@
     <color name="Gris">#c1c1c1</color>
     <color name="Azul">#0101f1</color>
     <color name="Blanco">#fafcfe</color>
+    <color name="Rojo">#ff0000</color>
+    <color name="Verde">#00ff00</color>
     <!--Fondos-->
     <color name="fondo1">#eeeeee</color>
     <!--botones-->
