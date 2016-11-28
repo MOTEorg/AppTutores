@@ -3,6 +3,8 @@ package com.motetronica.apptutores;
 /**
  * Created by KS on 19/11/2016.
  */
+import android.app.Activity;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Handler;
 import android.os.Message;
@@ -23,19 +25,21 @@ import java.util.ArrayList;
 public class GeneradorConsultas {
     String servidor="http://www.motetronica.com/";
     String respuesta;
-    public Handler pantalla=new Handler(){
-        @Override
-        public void handleMessage(Message msg){
-            respuesta=(String) msg.obj;
-        }
 
-    };
 
+
+
+    public Handler h_consultas;
+
+    public GeneradorConsultas(Handler handler){
+        this.h_consultas=handler;
+
+    }
     public String formarPares(ArrayList<String> claves, ArrayList<String> valores){
         String resultado="";
         if (claves.size()==valores.size()){
             for (int i=0; i<valores.size(); i++){
-                resultado+=claves.get(i)+"="+valores.get(i);
+                resultado+=claves.get(i)+"="+valores.get(i)+"&";
             }
         }
         else{
@@ -44,16 +48,17 @@ public class GeneradorConsultas {
         return resultado;
     }
 
-    public String selectfromTutor(ArrayList<String> campos_consultados,ArrayList<String> campos,ArrayList<String> relacionadores,ArrayList<String> valores ){
-        String resultado="SELECT ('";
+    public String selectFrom(String tabla, ArrayList<String> campos_consultados,ArrayList<String> campos,ArrayList<String> relacionadores,ArrayList<String> valores ){
+        String resultado="SELECT ";
         for (int i=0; i<campos_consultados.size()-1; i++){
             resultado+=campos_consultados.get(i)+",";
         }
-        resultado+=campos_consultados.get(campos_consultados.size()-1)+"') WHERE";
+        resultado+=campos_consultados.get(campos_consultados.size()-1)+" FROM "+ tabla+" WHERE ";
         if (campos.size()==valores.size()){
-            for (int i=0; i<valores.size(); i++){
-                resultado+=campos.get(i)+relacionadores.get(i)+valores.get(i);
+            for (int i=0; i<valores.size()-1; i++){
+                resultado+=campos.get(i)+relacionadores.get(i)+valores.get(i) + " AND ";
             }
+            resultado+=campos.get(campos.size()-1)+relacionadores.get(campos.size()-1)+valores.get(campos.size()-1)+";";
         }
         else{
             return "error";
@@ -75,8 +80,8 @@ public class GeneradorConsultas {
                     URL url = new URL(dataUrl);
                     connection = (HttpURLConnection) url.openConnection();
                     connection.setRequestMethod("POST");
-                    connection.setRequestProperty("Content-Type","application/x-www-form-urlencoded");
-                    connection.setRequestProperty("Content-Length","" + Integer.toString(dataUrlParameters.getBytes().length));
+                    connection.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+                    connection.setRequestProperty("Content-Length", "" + Integer.toString(dataUrlParameters.getBytes().length));
                     connection.setRequestProperty("Content-Language", "en-US");
                     connection.setUseCaches(false);
                     connection.setDoInput(true);
@@ -97,15 +102,21 @@ public class GeneradorConsultas {
                         response.append('\r');
                     }
                     rd.close();
-                    Message msg =new Message();
-                    msg.obj=response.toString();
-                    Log.d("Response",response.toString());
-                    pantalla.sendMessage(msg);
-                } catch (Exception e) {
+                    Message msg = new Message();
+                    msg.obj = response.toString();
+                    h_consultas.sendMessage(msg);
+                }
 
+                catch (Exception e){
+                    Log.d("Internet", "compruebe la conexion");
+                    Message msg = new Message();
+                    msg.obj = "Error de conexion en la red";
+                    msg.what=2;
+                    h_consultas.sendMessage(msg);
                     e.printStackTrace();
+                    }
 
-                } finally {
+                finally {
 
                     if (connection != null) {
                         connection.disconnect();
@@ -117,6 +128,8 @@ public class GeneradorConsultas {
 
 
     }
+
+
 
 
 

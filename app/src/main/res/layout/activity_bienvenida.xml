@@ -46,7 +46,7 @@
         android:layout_height="0dp"
         android:layout_weight="0.9"
         android:layout_width="match_parent"
-        android:text="TUTORIO"
+        android:text="TUTORIUM"
         android:textSize="@dimen/texto_grande"
         android:gravity="center"
         android:textColor="@color/colorGris1"

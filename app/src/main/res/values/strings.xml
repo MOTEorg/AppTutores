@@ -54,13 +54,39 @@
     <string name="porDirecciòn">Por Dirección.</string>
     <string name="porSexo">Por Sexo</string>
     <string name="filtrar">Filtrar Búsqueda</string>
+    <string name="porHorario">Por Horario</string>
+
+    <string-array name="dias_array">
+        <item>Lunes</item>
+        <item>Martes</item>
+        <item>Miercoles</item>
+        <item>Jueves</item>
+        <item>Viernes</item>
+        <item>Sabado</item>
+        <item>Domingo</item>
+    </string-array>
+
+    <string-array name="horas_array">
+        <item>7 AM</item>
+        <item>8 AM</item>
+        <item>9 AM</item>
+        <item>10 AM</item>
+        <item>11 AM</item>
+        <item>12 PM</item>
+        <item>1 PM</item>
+        <item>2 PM</item>
+        <item>3 PM</item>
+        <item>4 PM</item>
+        <item>5 PM</item>
+    </string-array>
     <!--Pantalla Contactos-->
     <string name="asunto">Asunto:</string>
     <string name="adjuntar">Adjuntar</string>
     <string name="Enviar">Contáctar</string>
     <string name="cc">Con copia a:</string>
 
-    <!--Pantalla Clase-->
+
+    <!--Pantalla Clase_tutoria-->
     <string name="profe">Tutor:</string>
     <string name="alumnoogrupo">Alumno o Grupo:</string>
     <string name="fecha">Fecha:</string>
@@ -78,5 +104,15 @@
                                 mejor servicio utilizando técnicas de búsqueda inteligente</string>
     <string name="Versión">Versión</string>
     <string name="cuenca">Cuenca, Ecuador</string>
+
+    <!--Simbolos-->
+    <string name="vistobueno">√</string>
+    <string name="equis">X</string>
+
+    <!--Horario-->
+    <string name="horario_disponible">HORARIO DISPONIBLE</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
