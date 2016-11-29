@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.motetronica.apptutores.Registro"
+    android:background="@color/background1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="REGISTRO TUTORIUM"
+        android:textColor="@color/Negro"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:textSize="20sp"
+        android:id="@+id/textView" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/tableLayout2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:text="Edad:"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:textSize="18sp"
+                android:textColor="@color/colorNegro"
+                android:id="@+id/textEdad" />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/colorNegro"
+                android:background="@color/Blanco"
+                android:id="@+id/spinnerEdad"
+                />
+            <TextView
+                android:text="N. Académico:"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:textSize="16sp"
+                android:textColor="@color/colorNegro"
+                android:id="@+id/textNivel" />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorNegro"
+                android:background="@color/Blanco"
+                android:textSize="14sp"
+                android:id="@+id/spinnerNivel">
+
+            </Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:text="Profesión/Carrera:"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:textSize="18dp"
+                android:textColor="@color/colorNegro"
+                android:id="@+id/textNombres" />
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:textSize="18dp"
+                android:layout_marginTop="@dimen/espacio_pequenio"
+                android:textColor="@color/colorNegro"
+                android:background="@color/Blanco"
+                android:id="@+id/txtNombres"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:text="Sexo:"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:textSize="18dp"
+                android:textColor="@color/colorNegro"
+                android:id="@+id/textSexo" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_marginTop="@dimen/espacio_pequenio"
+                android:textColor="@color/colorNegro"
+                android:background="@color/Blanco"
+                android:textOn="Mujer"
+                android:textOff="Hombre"
+                android:id="@+id/switchSexo"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:text="Direccion:"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:textSize="18dp"
+                android:textColor="@color/colorNegro"
+                android:id="@+id/textContrasena" />
+            <EditText
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:textSize="18dp"
+                android:layout_marginTop="@dimen/espacio_pequenio"
+                android:textColor="@color/colorNegro"
+                android:background="@color/Blanco"
+                android:id="@+id/txtDireccion"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:text="Telefono:"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:textSize="18dp"
+                android:textColor="@color/colorNegro"
+                android:id="@+id/textConfirmarContrasena" />
+            <EditText
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:textSize="18dp"
+                android:layout_marginTop="@dimen/espacio_pequenio"
+                android:textColor="@color/colorNegro"
+                android:background="@color/Blanco"
+                android:id="@+id/txtTelefono"/>
+            <TextView
+                android:text="Celular:"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:textSize="18dp"
+                android:textColor="@color/colorNegro"
+                android:id="@+id/textCelular" />
+            <EditText
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:textSize="18dp"
+                android:layout_marginTop="@dimen/espacio_pequenio"
+                android:textColor="@color/colorNegro"
+                android:background="@color/Blanco"
+                android:id="@+id/txtCelular"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+
+            <RadioGroup
+                android:id="@+id/rbgrp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <RadioButton
+                    android:id="@+id/rbgratis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GRATIS"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorNegro"
+                    />
+                <RadioButton
+                    android:id="@+id/rbpremium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PREMIUM"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorNegro"
+                    />
+
+            </RadioGroup>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:text="Clave PREMIUM"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:textSize="18dp"
+                android:textColor="@color/colorNegro"
+                android:id="@+id/textMail" />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:textSize="18dp"
+                android:layout_marginTop="@dimen/espacio_pequenio"
+                android:textColor="@color/colorNegro"
+                android:background="@color/Blanco"
+                android:id="@+id/txtClave"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/nuevoreg1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="REGISTRAR"
+                android:textSize="@dimen/boton_mediano"
+                android:background="@drawable/boton_nuevo"
+                android:textColor="@color/white"
+                android:paddingRight="@dimen/espacio_grande"
+                android:layout_marginRight="@dimen/espacio_mediano"
+                android:textAllCaps="false"
+                android:onClick="Registrar"
+                />
+
+            <Button
+                android:id="@+id/veteranoreg1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="REGRESAR"
+                android:textSize="@dimen/boton_mediano"
+                android:background="@drawable/boton_veterano"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:paddingRight="@dimen/espacio_grande"
+                android:onClick="Regresar"
+                />
+
+        </LinearLayout>
+    </TableLayout>
+
+
+
+</RelativeLayout>

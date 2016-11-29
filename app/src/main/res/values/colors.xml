@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Letra-->
+    <color name="Negro">#010101</color>
+    <color name="Gris">#c1c1c1</color>
+    <color name="Azul">#0101f1</color>
+    <color name="Blanco">#fafcfe</color>
+    <color name="Rojo">#ff0000</color>
+    <color name="Verde">#00ff00</color>
+    <!--Fondos-->
+    <color name="fondo1">#eeeeee</color>
+    <!--botones-->
+    <color name="but1">#3490AD</color>
+    <color name="but2">#3061B5</color>
+
+
+    <!--Principales-->
+    <color name="colorPrimary">#4F79FF</color>
+    <color name="colorPrimaryDark">#4060CB</color>
+    <color name="colorAccent">#8989FF</color>
+    <color name="colorRojo">#DD5242</color>
+    <color name="colorNegro">#020202</color>
+    <color name="colorGris1">#4F4F4F</color>
+    <color name="colorGris2">#888888</color>
+    <color name="colorGris3">#C2C2C2</color>
+    <color name="background1">#F2F2F2</color>
+    <color name="background2">#B3B3B3</color>
+    <color name="background3">#E6E6E6</color>
+    <color name="background4">#999999</color>
+    <color name="background5">#FFF5D6</color>
+    <color name="background6">#DECDFE</color>
+    <color name="background7">#D7ECFF</color>
+    <color name="background8">#FCDADA</color>
+    <color name="white">#FFFFFF</color>
+
+    <!--Botones-->
+    <color name="colorBotones1">#7D75F9</color>
+    <color name="colorBotones2">#7D62F9</color>
+    <color name="colorBotones3">#7059F0</color>
+    <color name="colorBotones4">#DD9569</color>
+    <color name="colorBotones5">#D09985</color>
+    <color name="colorBotones6">#FD9F75</color>
+    <color name="colorBotones7">#FD75F9</color>
+    <color name="colorBotones8">#FD82F9</color>
+    <color name="colorBotones9">#F099F0</color>
+
+
+</resources>
