@@ -21,7 +21,8 @@
         <activity android:name=".Perfil" />
         <activity android:name=".Busqueda" />
         <activity android:name=".Clase_tutoria" />
-        <activity android:name=".HorarioTutor"></activity>
+        <activity android:name=".HorarioTutor" />
+        <activity android:name=".RegistroCont"></activity>
     </application>
 
 </manifest>

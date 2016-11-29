@@ -50,13 +50,11 @@ public class AdaptadorLista extends ArrayAdapter<Tutor> {
         //avatar.setImageDrawable();
         name.setText(tutor.getNombre());
         title.setText(String.valueOf(tutor.getCalificacion()));
-        if (tutor.getFoto().compareTo("foto0.jpg")!=0){
-            Glide.with(getContext()).load("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-image-128.png").into(avatar);
-        }else{
+        if (tutor.getFoto().compareTo("null.jpg")==0){
             Glide.with(getContext()).load("http://www.motetronica.com/images/"+tutor.getFoto()).into(avatar);
+        }else{
+            Glide.with(getContext()).load("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-image-128.png").into(avatar);
         }
-
-
 
         return convertView;
     }
