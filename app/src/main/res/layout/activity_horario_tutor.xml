@@ -1051,7 +1051,7 @@ android:orientation="horizontal"
 android:layout_weight="1"
     >
 <Button
-    android:id="@+id/nuevo"
+    android:id="@+id/nuevohorario"
     android:layout_width="0dp"
     android:layout_height="match_parent"
     android:layout_weight="1"
@@ -1066,7 +1066,7 @@ android:layout_weight="1"
     />
 
 <Button
-    android:id="@+id/veterano"
+    android:id="@+id/veteranohorario"
     android:layout_width="0dp"
     android:layout_height="match_parent"
     android:layout_weight="1"

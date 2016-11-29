@@ -23,6 +23,7 @@
         android:textSize="20sp"
         android:id="@+id/textView" />
 
+
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -34,59 +35,17 @@
         android:layout_marginBottom="10dp"
         android:id="@+id/tableLayout2">
 
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:text="Ud desea registrarse como:"
-                android:textColor="@color/Negro"
-                android:gravity="center"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="0dp"
-                android:textSize="16sp"
-                android:id="@+id/text1" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal"
-            >
-
-            <RadioGroup
-                android:id="@+id/rbgrp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
-                >
-
-                <RadioButton
-                    android:id="@+id/rbtutor"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="TUTOR"
-                    android:textSize="20sp"
-                    android:textColor="@color/colorNegro"
-                    />
-                <RadioButton
-                    android:id="@+id/rbestudiante"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="ESTUDIANTE"
-                    android:textSize="20sp"
-                    android:textColor="@color/colorNegro"
-                    />
-
-            </RadioGroup>
-
-        </LinearLayout>
-
+            android:layout_height="38dp"
+            android:text="UNOS DATOS MÁS"
+            android:textColor="@color/Negro"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:textSize="16sp"
+            android:id="@+id/texttexto" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -95,7 +54,7 @@
             >
 
             <TextView
-                android:text="Cedula:"
+                android:text=":"
                 android:layout_width="100dp"
                 android:layout_height="30dp"
                 android:textSize="18dp"
@@ -232,7 +191,7 @@
             android:orientation="horizontal"
             >
             <Button
-                android:id="@+id/nuevoreg"
+                android:id="@+id/nuevo"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_weight="1"
@@ -247,7 +206,7 @@
                 />
 
             <Button
-                android:id="@+id/veteranoreg"
+                android:id="@+id/veterano"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_weight="1"
@@ -266,4 +225,3 @@
 
 
 </RelativeLayout>
-

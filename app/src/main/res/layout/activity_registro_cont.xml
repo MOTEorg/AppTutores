@@ -36,21 +36,148 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:text="Edad:"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:textSize="18sp"
+                android:textColor="@color/colorNegro"
+                android:id="@+id/textEdad" />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/colorNegro"
+                android:background="@color/Blanco"
+                android:id="@+id/spinnerEdad"
+                />
+            <TextView
+                android:text="N. Académico:"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:textSize="16sp"
+                android:textColor="@color/colorNegro"
+                android:id="@+id/textNivel" />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorNegro"
+                android:background="@color/Blanco"
+                android:textSize="14sp"
+                android:id="@+id/spinnerNivel">
+
+            </Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
             android:orientation="horizontal"
             >
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:text="Ud desea registrarse como:"
-                android:textColor="@color/Negro"
-                android:gravity="center"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="0dp"
-                android:textSize="16sp"
-                android:id="@+id/text1" />
+                android:text="Profesión/Carrera:"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:textSize="18dp"
+                android:textColor="@color/colorNegro"
+                android:id="@+id/textNombres" />
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:textSize="18dp"
+                android:layout_marginTop="@dimen/espacio_pequenio"
+                android:textColor="@color/colorNegro"
+                android:background="@color/Blanco"
+                android:id="@+id/txtNombres"/>
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:text="Sexo:"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:textSize="18dp"
+                android:textColor="@color/colorNegro"
+                android:id="@+id/textSexo" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_marginTop="@dimen/espacio_pequenio"
+                android:textColor="@color/colorNegro"
+                android:background="@color/Blanco"
+                android:textOn="Mujer"
+                android:textOff="Hombre"
+                android:id="@+id/switchSexo"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:text="Direccion:"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:textSize="18dp"
+                android:textColor="@color/colorNegro"
+                android:id="@+id/textContrasena" />
+            <EditText
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:textSize="18dp"
+                android:layout_marginTop="@dimen/espacio_pequenio"
+                android:textColor="@color/colorNegro"
+                android:background="@color/Blanco"
+                android:id="@+id/txtDireccion"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:text="Telefono:"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:textSize="18dp"
+                android:textColor="@color/colorNegro"
+                android:id="@+id/textConfirmarContrasena" />
+            <EditText
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:textSize="18dp"
+                android:layout_marginTop="@dimen/espacio_pequenio"
+                android:textColor="@color/colorNegro"
+                android:background="@color/Blanco"
+                android:id="@+id/txtTelefono"/>
+            <TextView
+                android:text="Celular:"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:textSize="18dp"
+                android:textColor="@color/colorNegro"
+                android:id="@+id/textCelular" />
+            <EditText
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:textSize="18dp"
+                android:layout_marginTop="@dimen/espacio_pequenio"
+                android:textColor="@color/colorNegro"
+                android:background="@color/Blanco"
+                android:id="@+id/txtCelular"/>
+        </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -67,18 +194,18 @@
                 >
 
                 <RadioButton
-                    android:id="@+id/rbtutor"
+                    android:id="@+id/rbgratis"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TUTOR"
+                    android:text="GRATIS"
                     android:textSize="20sp"
                     android:textColor="@color/colorNegro"
                     />
                 <RadioButton
-                    android:id="@+id/rbestudiante"
+                    android:id="@+id/rbpremium"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="ESTUDIANTE"
+                    android:text="PREMIUM"
                     android:textSize="20sp"
                     android:textColor="@color/colorNegro"
                     />
@@ -86,124 +213,13 @@
             </RadioGroup>
 
         </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:orientation="horizontal"
-            >
-
-            <TextView
-                android:text="Cedula:"
-                android:layout_width="100dp"
-                android:layout_height="30dp"
-                android:textSize="18dp"
-                android:textColor="@color/colorNegro"
-                android:id="@+id/textCedula" />
-            <EditText
-                android:layout_width="200dp"
-                android:layout_height="30dp"
-                android:textSize="18dp"
-                android:textColor="@color/colorNegro"
-                android:background="@color/Blanco"
-                android:id="@+id/txtCedula"
-                />
-        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:orientation="horizontal"
             >
             <TextView
-                android:text="Nombres:"
-                android:layout_width="100dp"
-                android:layout_height="30dp"
-                android:textSize="18dp"
-                android:textColor="@color/colorNegro"
-                android:id="@+id/textNombres" />
-            <EditText
-                android:layout_width="200dp"
-                android:layout_height="30dp"
-                android:textSize="18dp"
-                android:layout_marginTop="@dimen/espacio_pequenio"
-                android:textColor="@color/colorNegro"
-                android:background="@color/Blanco"
-                android:id="@+id/txtNombres"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:text="Apellidos:"
-                android:layout_width="100dp"
-                android:layout_height="30dp"
-                android:textSize="18dp"
-                android:textColor="@color/colorNegro"
-                android:id="@+id/textApellidos" />
-            <EditText
-                android:layout_width="200dp"
-                android:layout_height="30dp"
-                android:textSize="18dp"
-                android:layout_marginTop="@dimen/espacio_pequenio"
-                android:textColor="@color/colorNegro"
-                android:background="@color/Blanco"
-                android:id="@+id/txtApellidos"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:text="Contraseña:"
-                android:layout_width="100dp"
-                android:layout_height="30dp"
-                android:textSize="18dp"
-                android:textColor="@color/colorNegro"
-                android:id="@+id/textContrasena" />
-            <EditText
-                android:layout_width="200dp"
-                android:layout_height="30dp"
-                android:textSize="18dp"
-                android:layout_marginTop="@dimen/espacio_pequenio"
-                android:textColor="@color/colorNegro"
-                android:background="@color/Blanco"
-                android:id="@+id/txtConfContra"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:text="Confirmar Contr:"
-                android:layout_width="150dp"
-                android:layout_height="30dp"
-                android:textSize="18dp"
-                android:textColor="@color/colorNegro"
-                android:id="@+id/textConfirmarContrasena" />
-            <EditText
-                android:layout_width="150dp"
-                android:layout_height="30dp"
-                android:textSize="18dp"
-                android:layout_marginTop="@dimen/espacio_pequenio"
-                android:textColor="@color/colorNegro"
-                android:background="@color/Blanco"
-                android:id="@+id/ConfContra"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:orientation="horizontal"
-            >
-            <TextView
-                android:text="Mail:"
+                android:text="Clave PREMIUM"
                 android:layout_width="100dp"
                 android:layout_height="30dp"
                 android:textSize="18dp"
@@ -216,7 +232,7 @@
                 android:layout_marginTop="@dimen/espacio_pequenio"
                 android:textColor="@color/colorNegro"
                 android:background="@color/Blanco"
-                android:id="@+id/txtMail"/>
+                android:id="@+id/txtClave"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -232,7 +248,7 @@
             android:orientation="horizontal"
             >
             <Button
-                android:id="@+id/nuevoreg"
+                android:id="@+id/nuevoreg1"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_weight="1"
@@ -247,7 +263,7 @@
                 />
 
             <Button
-                android:id="@+id/veteranoreg"
+                android:id="@+id/veteranoreg1"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_weight="1"
@@ -266,4 +282,3 @@
 
 
 </RelativeLayout>
-

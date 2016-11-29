@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
     void pantalla_inicio(View v){
         setContentView(R.layout.activity_main);
     }
+
     void fin (View v){
         finish();
     }

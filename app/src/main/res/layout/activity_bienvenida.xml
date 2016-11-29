@@ -59,7 +59,7 @@
         android:layout_weight="0.9"
         android:layout_width="match_parent"
         android:text="MoteOrg"
-        android:textSize="@dimen/texto_grande"
+        android:textSize="14sp"
         android:gravity="center_horizontal"
         android:textColor="@color/colorGris1"
         android:textScaleX="1.5"
