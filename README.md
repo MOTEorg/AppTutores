@@ -1,4 +1,15 @@
 # AppTutores
-App tutores
 
-Subir aqui el codigo de la app
+Desarrolado con:
+Android Studio
+Java
+
+Test de app para conectar perfiles de estudiantes con perfiles de tutores que ofertan clases particulares
+
+Código de la applicación móvil con la configuración de Android Studio
+(Archivos importantes)[https://github.com/MOTEorg/AppTutores/tree/master/app/src/main/java/com/motetronica/apptutores]
+
+(Código del servidor)[https://github.com/MOTEorg/AppTutores/tree/master/SERVER/htdocs] 
+
+
+
